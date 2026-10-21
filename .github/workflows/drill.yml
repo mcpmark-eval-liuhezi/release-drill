@@ -1,6 +1,6 @@
 name: Release Drill Smoke Test
 
-"on":
+on:
   workflow_dispatch:
     inputs:
       message:
