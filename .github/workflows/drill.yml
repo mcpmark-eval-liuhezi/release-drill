@@ -1,0 +1,16 @@
+name: Release Drill Smoke Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Message to echo during the drill'
+        required: true
+        type: string
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo drill message
+        run: echo "Drill message: ${{ inputs.message }}"
