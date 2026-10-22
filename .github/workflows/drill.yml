@@ -1,16 +1,15 @@
-name: Release Drill Smoke Test
+name: Drill automation check
 
-"on":
-  workflow_dispatch:
-    inputs:
-      message:
-        description: 'Message to echo during the drill'
-        required: true
-        type: string
+on:
+  push:
+    branches:
+      - drill/automation-check
 
 jobs:
-  smoke-test:
+  drill:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo drill message
-        run: echo "Drill message: ${{ inputs.message }}"
+      - name: Checkpoint 1
+        run: echo "Checkpoint 1: drill branch and workflow scaffolding in place."
+      - name: Checkpoint 2
+        run: echo "Checkpoint 2: automation check executed successfully."
