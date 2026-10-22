@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkpoint 1
-        run: echo "Checkpoint 1: drill branch and workflow scaffolding in place."
+        run: echo "Checkpoint 1 - drill branch and workflow scaffolding in place."
       - name: Checkpoint 2
-        run: echo "Checkpoint 2: automation check executed successfully."
+        run: echo "Checkpoint 2 - automation check executed successfully."
