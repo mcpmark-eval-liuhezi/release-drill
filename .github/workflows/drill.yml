@@ -3,7 +3,7 @@ name: Drill automation check
 on:
   push:
     branches:
-      - 'drill/**'
+      - drill/automation-check
 
 jobs:
   drill:
