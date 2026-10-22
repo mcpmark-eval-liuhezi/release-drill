@@ -1,6 +1,6 @@
 name: Drill automation check
 
-on:
+"on":
   push:
     branches: [drill/automation-check]
 
